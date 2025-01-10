@@ -372,16 +372,15 @@
         margin: 6rem;
     }
 
-    /*Definimos un ancho del 100%, ancho mínimo de 15.625rem y máximo de 40rem*/
+    /*Definimos un ancho del 100%, ancho mínimo de 15.625rem y máximo de 40rem.*/
     .contenedor-audio { 
         width: 100%;
         min-width: 15.625rem;
         max-width: 40rem; 
-        box-sizing: border-box; 
     }
 
+    /*Definimos un ancho del 100% y un ancho máximo de 31.25rem.*/
     audio {
         width: 100%;
-        max-width: 500px;
-        box-sizing: border-box;
+        max-width: 31.25rem;
     }
