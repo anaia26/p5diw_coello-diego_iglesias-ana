@@ -1,0 +1,331 @@
+/* Establecemos un fondo con una imagen ajustada al contenedor, definimos una fuente serif clásica, eliminamos los márgenes por defecto, y organizanizamos los elementos hijos en una columna usando Flexbox */
+    body {
+    background-image: url("../IMG/imgIndex/fondo01.webp");
+    background-size: contain;
+    font-family: Palatino Linotype, serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    }
+
+    /* Definimos un encabezado como un contenedor Flexbox con dirección de fila y posibilidad de ajuste en varias líneas; establecemos un fondo de color claro, distribuimos los elementos con espacio entre ellos y aseguramos que ocupe el ancho completo del contenedor con un ancho mínimo definido. */
+    header {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(223, 242, 235);
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    min-width: 18.75rem;
+    }
+
+    /* Establecemos que el elemento "<h1>" dentro del encabezado use Flexbox, se estire horizontalmente para llenar el espacio disponible, se alinee verticalmente al centro del contenedor, y ocupe el 100% de la altura del contenedor padre. */
+    header h1 {
+        display: flex;
+        margin: auto auto auto 0;
+    }
+    /* Aplicamos un tamaño de fuente de 1rem, convertimos el texto a mayúsculas, lo coloreamos de negro, ajustamos el espaciado entre letras a 0.25rem, eliminamos cualquier subrayado, establecemos un margen de 0.9375rem alrededor del elemento, y usamos una fuente normal. */
+    .principio {
+    font-size: 1rem;
+    text-transform: uppercase; 
+    color: black;  
+    letter-spacing: 0.25rem; 
+    text-decoration: none;
+    margin: 0 0.9375rem;
+    padding: 0.625rem 0;
+    font-weight: normal;
+    }
+
+    /* Definimos un contenedor con el id "navegador" como un contenedor Flexbox en fila; establecemos un ancho máximo del 50% del contenedor padre, distribuimos los elementos con espacio uniforme entre ellos y los centramos verticalmente. */
+    #navegador {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 50%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* Aplicamos un cambio de color a un tono azul cuando hacemos hover sobre el elemento con la clase "principio", subrayamos el texto y cambiamos el cursor a un puntero. */
+    .principio:hover {
+    color: rgb(74, 98, 138);
+    text-decoration: underline;
+    cursor: pointer;
+    }
+
+    /* Definimos el contenedor con el id "encabezado" como un contenedor Flexbox en fila; distribuimos los elementos de manera uniforme, estiramos y ajustamos tanto las filas como las columnas; establecemos un ancho máximo del 66.5%, con un margen superior de 1.25rem y centrado horizontal; aplicamos un fondo claro, border-radius con un borde de 0.625rem de grosor en color azul claro, y una sombra suave. Un ancho mínimo de 18.75rem y una altura automática. */
+    #encabezado {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+    width: 100%;
+    max-width: 66.5%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    background-color: rgb(223, 242, 235);
+    border: 0.625rem solid rgb(122, 178, 211);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+    min-width: 18.75rem;
+    }
+
+    /* Definimos el contenedor con el id "insignia" con un ancho máximo del 30%. Aplicamos márgenes en la parte superior (0.5rem), inferior (0.3125rem), y izquierda (1rem), limitamos la altura máxima a 15.625rem. */
+    #insignia {
+    width: 100%;
+    max-width: 30%;
+    align-self: center;
+    flex-grow: 1;
+    max-width: 9.375rem;
+    max-height: 15.625rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3125rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    }
+
+    /* Definimos el contenedor con el id "presentacion" con un ancho máximo del 70%, alineamos el texto de manera justificada, y centramos verticalmente los elementos hijos dentro del contenedor. */
+    #presentacion {
+    max-width: 70%;
+    text-align: justify;
+    align-items: center;
+    }
+
+    /* Aplicamos a los elementos "<h2>" dentro del contenedor con el id "encabezado" un tamaño de fuente de 1.5rem, un margen inferior de 1.25rem, y establecemos el color del texto en negro. */
+    #encabezado h2 {
+        font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: black;
+    }
+
+    /* Aplicamos a los "<p>" dentro del contenedor con el id "presentacion" un tamaño de fuente de 1rem, un color de texto negro, y un interlineado de 1.6 para mejorar la legibilidad. */
+    #presentacion p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    }
+
+    /* Establecemos que el elemento con el id "introImg" tenga un ancho fijo de 9.375rem, una altura ajustada automáticamente, y border-radius de 0.5rem. */
+    #introImg {
+    width: 9.375rem;
+    height: auto;
+    border-radius: 0.5rem;
+    }
+
+    /* Centramos horizontalmente el texto de los elementos "<h1>" dentro del elemento "<main>". */
+    main h1 {
+    text-align: center;
+    }
+
+    /* Definimos los elementos "tarjeta" como contenedores Flexbox con dirección en columna y contenido centrado; establecemos un ancho fijo de 18.75rem, con márgenes horizontales automáticos y un margen inferior de 1.875rem. Aplicamos un fondo con un degradado vertical, bordes redondeados de 0.625rem, y un borde sólido de 0.625rem en color azul claro. Agregamos un padding de 3.125rem en la parte superior e inferior y 1.25rem a los lados. */
+    .tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18.75rem;
+    margin: 0 auto;
+    background: linear-gradient(rgb(185, 229, 232) 25%, rgb(223, 242, 235) 30%);
+    box-shadow: 0 0.625rem 2.1875rem black;
+    border-radius: 0.625rem;
+    padding: 3.125rem 1.25rem;
+    margin-bottom: 1.875rem;
+    border-color: black;
+    border: 0.625rem solid rgb(122, 178, 211);
+    }
+
+    /* Definimos el id "divTarjeta" como un contenedor Flexbox en fila; establecemos un ancho máximo del 70%, lo centramos horizontalmente con márgenes automáticos, y añadimos un espacio de 1rem entre los elementos hijos. */
+    #divTarjeta {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 70%;
+    margin: 0 auto;
+    gap: 1rem;
+    }
+
+    /* Definimos el id "redes" como un contenedor Flexbox en fila; centramos los elementos hijos tanto horizontal como verticalmente dentro del contenedor. */
+    #redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+    /* Aplicamos a la clase "redes" un ancho fijo de 1.25rem, un padding-top de 0.625rem, y un margen de 0.3125rem. */
+    .redes {
+    width: 1.25rem;
+    padding-top: 0.625rem;
+    margin: 0.3125rem;
+    }
+
+    /* Definimos el id "copy" como un contenedor Flexbox con el que centramos horizontalmente sus elementos hijos. */
+    #copy {
+    display: flex;
+    justify-content: center;
+    }
+
+    /* Establecemos el fondo del "<footer>" con un color claro, aplicamos un margin-top de 0.9375rem, aseguramos que ocupe todo el ancho disponible con width 100% y establecemos un ancho mínimo de 18.75rem. */
+    footer {
+    background-color: rgb(223, 242, 235);
+    margin-top: 0.9375rem;
+    width: 100%;
+    min-width: 18.75rem;
+    }
+
+    /* Definimos la clase "imagen" con un ancho de 12.5rem, una altura de 9.375rem, border-radius de 20%, y un margin-bottom de 1.5625rem. */
+    .imagen {
+    width: 12.5rem;
+    height: 9.375rem;
+    border-radius: 20%;
+    margin-bottom: 1.5625rem;
+    }
+
+    /* Aplicamos a la clase "podcastNumero" un tamaño de fuente de 1.25rem, un margen vertical de 0.5rem, y un color de texto negro. */
+    .podcastNumero {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: black;
+    }
+
+    /* Definimos la clase "descripcion" con un tamaño de fuente de 0.9rem, color de texto negro, y un margen vertical de 0.5rem. */
+    .descripcion {
+    font-size: 0.9rem;
+    color: black;
+    margin: 0.5rem 0;
+    }
+
+    /* Definimos la clase "tarjetaFinal" como un contenedor Flexbox. Establecemos un width del 100% y aplicamos un margen superior de 0.9375rem. */
+    .tarjetaFinal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.9375rem;
+    }
+
+    /* Aplicamos a la clase "valoracion" un tamaño de fuente de 0.9rem y un color amarillo, para resaltar valoraciones. */
+    .valoracion {
+    font-size: 0.9rem;
+    color: rgb(206, 219, 5);
+    }
+
+    /* Establecemos a la clase "vermas" un fondo color azul claro, texto negro, sin borde, con un padding de 0.5rem en la parte superior e inferior y 0.9375rem a los lados, y border-radius de 0.25rem. */
+    .vermas {
+    background-color: rgb(122, 178, 211);
+    color: black;
+    border: none;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 0.25rem;
+    }
+
+    /* Aplicamos un cambio de fondo a un tono azul más oscuro y un color de texto claro cuando hacemos hover sobre el elemento con la clase "vermas". También subrayamos el texto y cambiamos el cursor a un puntero. */
+    .vermas:hover {
+    background-color: rgb(74, 98, 138);
+    color: rgb(223, 242, 235);
+    text-decoration: underline;
+    cursor: pointer;
+    }
+
+    /* Definimos la clase "articuloForo" como un contenedor Flexbox con un width del 64.5% del contenedor principal, centrado horizontalmente. Aplicamos una sombra, border-radius de 0.625rem, un borde sólido de 0.625rem en color azul claro, y un fondo de color azul. Agregamos un margen inferior de 1.875rem. */
+    .articuloForo {
+    display: flex;
+    width: 64.5%;
+    margin: 0 auto;
+    box-shadow: 0 0.625rem 2.1875rem black;
+    border-radius: 0.625rem;
+    margin-bottom: 1.875rem;
+    border: 0.625rem solid rgb(185, 229, 232);
+    background-color: rgb(122, 178, 211) ;
+    }
+
+    /* Aplicamos padding-left de 1.25rem en el lado izquierdo de la clase "foro". */
+    .foro {
+    padding-left: 1.25rem;
+    }
+
+    /* Centramos el texto horizontalmente en los elementos "<h1>" dentro de un contenedor "<div>". */
+    div h1 {
+    text-align: center;
+    }
+
+    /* Definimos el id "formulario" como un contenedor Flexbox con dirección de columna; establecemos un width del 85% del contenedor principal y lo centramos horizontalmente con márgenes automáticos. */
+    #formulario {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    }
+
+    /* Establecemos el color del texto de los elementos "<h1>" en un tono claro. */
+    h1 {
+        color: rgb(223, 242, 235);
+    }
+
+    /* Establecemos el color del texto de los elementos "<h2>" en un tono claro. */
+    h2 {
+        color: rgb(223, 242, 235);
+    }
+
+    /* Establecemos el color del texto de los elementos "<h3>" en un tono claro. */
+    h3 {
+        color: rgb(223, 242, 235);
+    }
+
+    /* Establecemos el color del texto de los elementos "<h4>" en un tono claro. */
+    h4 {
+        color: rgb(223, 242, 235);
+    }
+
+    /* Definimos la clase "controlFormulario" como un contenedor Flexbox en fila; establece un width del 100%, centramos los elementos hijos horizontalmente, y aplicamos un margin-bottom de 1.25rem. */
+    .controlFormulario {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    }
+
+    /* Definimos el contenedor con el id "textoComentario" con un padding de 0.625rem, un borde sólido de 0.625rem en color azul claro, y una sombra. Aplicamos border-radius de 0.3125rem, un width del 70% y un fondo de color azul claro. */
+    #textoComentario { 
+    padding: 0.625rem;
+    border: 0.625rem solid rgb(122, 178, 211);
+    box-shadow: 0 0.625rem 2.1875rem black;
+    border-radius: 0.3125rem;
+    width: 70%;
+    background-color: rgb(185, 229, 232);
+    color: black;
+    }
+
+    /* Definimos los elementos "<h4>" como contenedores Flexbox y les aplicamos un margin-left del 13%. */
+    h4 {
+    display: flex;
+    margin-left: 13%;
+    }
+
+    /* Cambiamos el cursor a un puntero cuando hacemos hover sobre los elementos con la clase "sociales". */
+    .sociales:hover {
+    cursor: pointer;
+    }
+
+    /* Definimos el id "enviar" con una altura de 3.125rem, un ancho automático, un fondo azul claro y texto en un tono claro. Aplicamos una sombra, centramos el contenido verticalmente, y establecemos un margin-left del 1%. El botón también se alinea al centro con bordes redondeados al 10%. */
+    #enviar {
+    height: 3.125rem;
+    width: auto;
+    background-color: rgb(122, 178, 211);
+    color: rgb(223, 242, 235);
+    box-shadow: 0 0.625rem 2.1875rem black;
+    align-items: center;
+    margin-left: 1%;
+    align-self: center;
+    border-radius: 10%;
+    }
+
+    /* Cambiamos el fondo del botón con el id "enviar" a un tono azul más claro, el color del texto a negro, y lo subrayamos cuando se pasa el cursor sobre él. Mantenemos la sombra y cambiamos el cursor a un puntero. */
+    #enviar:hover {
+    background-color: rgb(185, 229, 232);
+    color: black;
+    text-decoration: underline;
+    box-shadow: 0 0.625rem 2.1875rem black;
+    cursor: pointer;
+    }
