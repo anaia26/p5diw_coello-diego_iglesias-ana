@@ -329,3 +329,39 @@
     box-shadow: 0 0.625rem 2.1875rem black;
     cursor: pointer;
     }
+
+    #presentacionPodcast {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 65%;
+        margin: 0 auto;
+        background: linear-gradient(rgb(185, 229, 232) 25%, rgb(223, 242, 235) 30%);
+        box-shadow: 0 0.625rem 2.1875rem black;
+        border-radius: 0.625rem;
+        padding: 3.125rem 1.25rem;
+        margin-bottom: 1.875rem;
+        border-color: black;
+        border: 0.625rem solid rgb(122, 178, 211);
+        text-align: center;
+    }
+
+
+    /* Establecemos que el elemento con el id "miniaturaPodcastImg" tenga un ancho fijo de 18.75rem, una altura ajustada automáticamente, y border-radius de 0.5rem. */
+    #miniaturaPodcastImg {
+        max-width: 20%;
+        min-width: 6.25rem;
+        height: auto;
+        border-radius: 0.5rem;
+        }
+
+    #reproductor {
+        display: flex;
+        width: 30rem;
+    }
+
+    #reproductor[controls] {
+        width: 15.625rem;
+    }
