@@ -330,6 +330,7 @@
     cursor: pointer;
     }
 
+    /* Definimos el elemento que tiene el id "presentacionPodcast" como contenedor Flexbox con dirección en columna y contenido centrado y separado 30px; establecemos un ancho de 65%, el texto centrado, con márgenes horizontales automáticos y un margen inferior de 1.875rem. Aplicamos un fondo con un degradado vertical, bordes redondeados de 0.625rem, y un borde sólido de 0.625rem en color azul claro. Agregamos un padding de 3.125rem en la parte superior e inferior y 1.25rem a los lados. */
     #presentacionPodcast {
         display: flex;
         flex-direction: column;
@@ -348,20 +349,39 @@
         text-align: center;
     }
 
+    #presentacionPodcast p {
+        width: 100%;
+    }
 
-    /* Establecemos que el elemento con el id "miniaturaPodcastImg" tenga un ancho fijo de 18.75rem, una altura ajustada automáticamente, y border-radius de 0.5rem. */
+
+    /* Establecemos que el elemento con el id "miniaturaPodcastImg" tenga un ancho máximo del 20% y mínimo de 6.25rem, una altura ajustada automáticamente, y border-radius de 0.5rem. */
     #miniaturaPodcastImg {
-        max-width: 20%;
+        max-width: 40%;
         min-width: 6.25rem;
         height: auto;
         border-radius: 0.5rem;
         }
 
-    #reproductor {
+    /* Definimos el elemento que tiene la clase "miniatura-presentacion" como contenedor Flexbox con dirección en fila, contenido centrado y separado 30px;*/
+    .miniatura-presentacion {
         display: flex;
-        width: 30rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 6rem;
     }
 
-    #reproductor[controls] {
-        width: 15.625rem;
+    /*Definimos un ancho del 100%, ancho mínimo de 15.625rem y máximo de 40rem*/
+    .contenedor-audio { 
+        width: 100%;
+        min-width: 15.625rem;
+        max-width: 40rem; 
+        box-sizing: border-box; 
+    }
+
+    audio {
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
     }
