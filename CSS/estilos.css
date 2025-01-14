@@ -159,6 +159,11 @@
     margin: 0.3125rem;
     }
 
+    .redes:hover {
+        -webkit-transform:scale(1.3);
+        transform:scale(1.7);
+    }
+
     /* Definimos el id "copy" como un contenedor Flexbox con el que centramos horizontalmente sus elementos hijos. */
     #copy {
     display: flex;
@@ -179,6 +184,13 @@
     height: 9.375rem;
     border-radius: 20%;
     margin-bottom: 1.5625rem;
+    }
+
+    .imagen:hover {
+        border-radius: 35%;
+        -webkit-border-radius: 35%;
+        box-shadow: 0px 0px 15px 15px rgb(122, 178, 211);
+        -webkit-box-shadow: 0px 0px 15px 15px rgb(122, 178, 211);
     }
 
     /* Aplicamos a la clase "podcastNumero" un tamaño de fuente de 1.25rem, un margen vertical de 0.5rem, y un color de texto negro. */
@@ -225,6 +237,8 @@
     color: rgb(223, 242, 235);
     text-decoration: underline;
     cursor: pointer;
+    -webkit-transform:scale(1.3);
+    transform:scale(1.2);
     }
 
     /* Definimos la clase "articuloForo" como un contenedor Flexbox con un width del 64.5% del contenedor principal, centrado horizontalmente. Aplicamos una sombra, border-radius de 0.625rem, un borde sólido de 0.625rem en color azul claro, y un fondo de color azul. Agregamos un margen inferior de 1.875rem. */
@@ -359,7 +373,7 @@
         max-width: 50%;
         min-width: 10.25rem;
         height: auto;
-        border-radius: 0.5rem;
+        border-radius: 1rem;
         }
 
     /* Definimos el elemento que tiene la clase "miniatura-presentacion" como contenedor Flexbox con dirección en fila, contenido centrado y separado 30px;*/
@@ -396,7 +410,22 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
         margin: 4rem;
         align-items: center;
+    }
+
+    .anotaciones {
+        text-align: center;
+        margin-top: 4rem;
+        color:rgb(223, 242, 235);
+    }
+
+    .anotaciones li {
+        list-style-type: none;
+    }
+
+    .anotaciones h2 {
+        text-decoration: underline;
+        color: rgb(185, 229, 232);
     }
