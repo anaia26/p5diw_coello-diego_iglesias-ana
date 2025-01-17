@@ -394,7 +394,7 @@
     }
 
     /*Definimos un ancho del 100% y un ancho máximo de 31.25rem.*/
-    audio {
+    .contenedor-audio iframe {
         width: 100%;
         max-width: 31.25rem;
     }
