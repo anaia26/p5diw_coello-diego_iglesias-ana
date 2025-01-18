@@ -72,8 +72,8 @@
     min-width: 18.75rem;
     }
 
-    /* Definimos el contenedor con el id "insignia" con un ancho máximo del 30%. Aplicamos márgenes en la parte superior (0.5rem), inferior (0.3125rem), y izquierda (1rem), limitamos la altura máxima a 15.625rem. */
-    #insignia {
+    /* Definimos el contenedor con el id "logotipo" con un ancho máximo del 30%. Aplicamos márgenes en la parte superior (0.5rem), inferior (0.3125rem), y izquierda (1rem), limitamos la altura máxima a 15.625rem. */
+    #logotipo {
     width: 100%;
     max-width: 30%;
     align-self: center;
@@ -397,6 +397,7 @@
     .contenedor-audio iframe {
         width: 100%;
         max-width: 31.25rem;
+        border: 0rem;
     }
 
     #miniaturaImg {
