@@ -1,6 +1,6 @@
 /* Establecemos un fondo con una imagen ajustada al contenedor, definimos una fuente serif clásica, eliminamos los márgenes por defecto, y organizanizamos los elementos hijos en una columna usando Flexbox */
     body {
-    background-image: url("/p5diw_coello-diego_iglesias-ana/img/imgIndex/fondo01.webp");
+    background-image: url("../img/imgIndex/fondo01.webp");
     background-size: contain;
     font-family: Palatino Linotype, serif;
     margin: 0;
