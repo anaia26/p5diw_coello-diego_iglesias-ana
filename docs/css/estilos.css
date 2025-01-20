@@ -271,23 +271,8 @@
     margin: 0 auto;
     }
 
-    /* Establecemos el color del texto de los elementos "<h1>" en un tono claro. */
-    h1 {
-        color: rgb(223, 242, 235);
-    }
-
-    /* Establecemos el color del texto de los elementos "<h2>" en un tono claro. */
-    h2 {
-        color: rgb(223, 242, 235);
-    }
-
-    /* Establecemos el color del texto de los elementos "<h3>" en un tono claro. */
-    h3 {
-        color: rgb(223, 242, 235);
-    }
-
-    /* Establecemos el color del texto de los elementos "<h4>" en un tono claro. */
-    h4 {
+    /* Establecemos el color del texto de los elementos "<h1>, <h2>, <h3> y <h4>" en un tono claro. */
+    h1, h2, h3, h4 {
         color: rgb(223, 242, 235);
     }
 
@@ -374,7 +359,7 @@
         min-width: 10.25rem;
         height: auto;
         border-radius: 1rem;
-        }
+    }
 
     /* Definimos el elemento que tiene la clase "miniatura-presentacion" como contenedor Flexbox con dirección en fila, contenido centrado y separado 30px;*/
     .miniatura-presentacion {
@@ -416,17 +401,68 @@
         align-items: center;
     }
 
-    .anotaciones {
+    .notas {
         text-align: center;
         margin-top: 4rem;
         color:rgb(223, 242, 235);
+        width: 100%;
     }
 
-    .anotaciones li {
+    .notas ul {
+        padding: 0;
+    }
+
+    .notas li {
         list-style-type: none;
     }
 
-    .anotaciones h2 {
+    .notas h2 {
         text-decoration: underline;
-        color: rgb(185, 229, 232);
+        color: rgb(74, 98, 138);
+    }
+
+    summary {
+        list-style: none;
+        font-size: 15pt;
+        cursor: pointer;
+    }
+
+    .botonNotas {
+        background-color: rgb(122, 178, 211);
+        color: black;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        width: 180px;
+        height: auto;
+    }
+
+    summary {
+        align-items: center;
+    }
+
+    .botonNotas:hover {
+        color: rgb(74, 98, 138);
+        background-color: rgb(223, 242, 235);
+        text-decoration: underline;
+        cursor: pointer;
+        -webkit-transform:scale(1.3);
+        transform:scale(1.2);
+    }
+
+    .notasPodcast {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background: rgb(223, 242, 235);
+        border-radius: 0.625rem;
+        padding: 3.125rem 1.25rem;
+        margin-top: 1.25rem;
+        margin-bottom: 1.875rem;
+        border-color: black;
+        position: relative;
+        z-index: 10;
+        color: rgb(74, 98, 138);
     }
