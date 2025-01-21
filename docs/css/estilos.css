@@ -498,3 +498,24 @@
         justify-content: center;
         flex-direction: column;
     }
+
+    /*Estilizamos los elementos con la clase .episodios, utilizando un diseño flexible con los elementos distribuidos uniformemente, un ancho del 80%, text-decoration: underline y aplicandomos el color rgb(74, 98, 138).*/
+    .episodios {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        text-decoration: underline;
+        color: rgb(74, 98, 138);
+    }
+
+    /*Definimos el estado hover del elemento con el ID #episodio1, cambiando el color del texto a negro y cursor pointer.*/
+    #episodio1:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    /*Definimos el estado hover del elemento con el ID #episodio2, cambiando el color del texto a negro y cursor pointer.*/
+    #episodio2:hover {
+        color: black;
+        cursor: pointer;
+    }
