@@ -475,7 +475,7 @@
     .notasPodcast {
         align-items: center;
         text-align: center;
-        gap: 30px;
+        gap: 1.875rem;
         background: rgb(223, 242, 235);
         border-radius: 0.625rem;
         padding: 3.125rem 1.25rem;
