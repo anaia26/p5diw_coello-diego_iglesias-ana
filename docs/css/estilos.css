@@ -503,7 +503,7 @@
     .episodios {
         display: flex;
         justify-content: space-evenly;
-        width: 80vw;
+        width: 45vw;
         text-decoration: underline;
         color: rgb(74, 98, 138);
     }
