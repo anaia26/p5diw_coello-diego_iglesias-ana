@@ -365,13 +365,13 @@
         border-radius: 1rem;
     }
 
-    /* Definimos el elemento que tiene la clase "miniatura-presentacion" como contenedor Flexbox con dirección en fila, contenido centrado y separado 30px;*/
+    /* Definimos el elemento que tiene la clase "miniatura-presentacion" como contenedor Flexbox con dirección en fila, contenido centrado y separado 1.875rem;*/
     .miniatura-presentacion {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 1.875rem;
         margin: 6rem 6rem 2rem;
     }
 
