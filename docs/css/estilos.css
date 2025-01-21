@@ -422,6 +422,12 @@
         color: rgb(74, 98, 138);
     }
 
+    details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     summary {
         list-style: none;
         font-size: 15pt;
@@ -444,16 +450,15 @@
     }
 
     .botonNotas:hover {
-        color: rgb(74, 98, 138);
-        background-color: rgb(223, 242, 235);
+        background-color: rgb(74, 98, 138);
+        color: rgb(223, 242, 235);
         text-decoration: underline;
         cursor: pointer;
-        -webkit-transform:scale(1.3);
-        transform:scale(1.2);
     }
 
     .notasPodcast {
         align-items: center;
+        text-align: center;
         gap: 30px;
         background: rgb(223, 242, 235);
         border-radius: 0.625rem;
