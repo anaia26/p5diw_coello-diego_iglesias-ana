@@ -385,6 +385,7 @@
         border: 0rem;
     }
 
+    /* Definimos el límite de ancho máximo al 10% del contenedor, aseguramos un ancho mínimo de 6.25rem y redondeamos las esquinas con un border-radius de 0.5rem.*/
     #miniaturaImg {
         max-width: 10%;
         min-width: 6.25rem;
@@ -392,6 +393,7 @@
         border-radius: 0.5rem;
     }
 
+    /*Aplicamos a los elementos con la clase .encabezado un diseño flexible, permitiendo que los elementos se ajusten a nuevas filas si es necesario, centrando su contenido horizontal y verticalmente, dejando un espacio de 2rem entre ellos, y un margen de 4rem.*/
     .encabezado {
         display: flex;
         flex-wrap: wrap;
@@ -401,6 +403,7 @@
         align-items: center;
     }
 
+    /*Estilizamos los elementos de la clase .notas, centrando su texto, aplicando un margen superior de 4rem, un color de texto en un tono claro, y asegurando que ocupen el 100% del ancho disponible.*/
     .notas {
         text-align: center;
         margin-top: 4rem;
@@ -408,47 +411,55 @@
         width: 100%;
     }
 
+    /*Eliminamos el padding de las listas desordenadas dentro de los elementos con la clase .notas.*/
     .notas ul {
         padding: 0;
     }
 
+    /*Estilizamos los elementos <li> dentro de .notas, eliminando los marcadores predeterminados y aplicando un margen superior de 1rem entre los elementos.*/
     .notas li {
         list-style-type: none;
         margin-top: 1rem;
     }
 
+    /*Estilizamos los encabezados <h2> dentro de .notas, subrayando el texto y aplicando el color rgb(74, 98, 138).*/
     .notas h2 {
         text-decoration: underline;
         color: rgb(74, 98, 138);
     }
 
+    /*Estilizamos los elementos <details> para que se comporten como un contenedor flexible con orientación en columna y centren sus elementos hijos horizontalmente.*/
     details {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    /*Estilizamos los elementos <summary>, eliminando el estilo de lista predeterminado, configurando un tamaño de fuente de 15pt y cambiando el cursor a pointer.*/
     summary {
         list-style: none;
         font-size: 15pt;
         cursor: pointer;
     }
 
+    /*Estilizamos los elementos con la clase .botonNotas, asignándoles un fondo azul claro (rgb(122, 178, 211)), texto negro, sin borde, un relleno de 0.5rem, border-radius de 0.25rem, un ancho fijo de 11.25rem y una altura proporcional automática.*/
     .botonNotas {
         background-color: rgb(122, 178, 211);
         color: black;
         border: none;
         padding: 0.5rem;
         border-radius: 0.25rem;
-        width: 180px;
+        width: 11.25rem;
         height: auto;
     }
 
+    /*Estilizamos los elementos <summary> para que se alineen tanto vertical como horizontalmente al centro de su contenedor.*/
     summary {
         align-items: center;
         align-self: center;
     }
 
+    /*Definimos el estado hover de los elementos con la clase .botonNotas, cambiando el fondo a rgb(74, 98, 138), el color del texto a rgb(223, 242, 235), subrayando el texto y cambiando el cursor a pointer.*/
     .botonNotas:hover {
         background-color: rgb(74, 98, 138);
         color: rgb(223, 242, 235);
@@ -456,6 +467,7 @@
         cursor: pointer;
     }
 
+    /*Definimos los elementos con la clase .notasPodcast, centrando su contenido tanto vertical como horizontalmente, aplicando un fondo claro rgb(223, 242, 235), border-radius de 0.625rem, un padding de 3.125rem arriba y 1.25rem a los lados, un borde negro, posicionamiento relativo con un índice de 10, y un color rgb(74, 98, 138).*/
     .notasPodcast {
         align-items: center;
         text-align: center;
@@ -471,10 +483,12 @@
         color: rgb(74, 98, 138);
     }
 
+    /*Estilizamos los encabezados <h3> aplicándoles un color rgb(74, 98, 138).*/
     h3 {
         color: rgb(74, 98, 138);
     }
 
+    /*Definimos los elementos <details> para que usen un diseño flexible, centren su contenido horizontalmente y organicen sus elementos en una columna.*/
     details {
         display: flex;
         justify-content: center;
