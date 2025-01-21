@@ -93,10 +93,12 @@
     align-items: center;
     }
 
-    /* Aplicamos a los elementos "<h2>" dentro del contenedor con el id "encabezado" un tamaño de fuente de 1.5rem, un margen inferior de 1.25rem, y establecemos el color del texto en negro. */
+    /* Aplicamos a los elementos "<h2>" dentro del contenedor con el id "encabezado" un tamaño de fuente de 1.5rem, un margen inferior de 1.25rem, establecemos el color del texto en negro y margenes izquierdo y derecho de 1 rem. */
     #encabezado h2 {
         font-size: 1.5rem;
     margin-bottom: 1.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     color: black;
     }
 
@@ -114,9 +116,11 @@
     border-radius: 0.5rem;
     }
 
-    /* Centramos horizontalmente el texto de los elementos "<h1>" dentro del elemento "<main>". */
+    /* Centramos horizontalmente el texto de los elementos "<h1>" dentro del elemento "<main>" y margenes izquierdo y derecho de 1 rem. */
     main h1 {
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
     }
 
     /* Definimos los elementos "tarjeta" como contenedores Flexbox con dirección en columna y contenido centrado; establecemos un ancho fijo de 18.75rem, con márgenes horizontales automáticos y un margen inferior de 1.875rem. Aplicamos un fondo con un degradado vertical, bordes redondeados de 0.625rem, y un borde sólido de 0.625rem en color azul claro. Agregamos un padding de 3.125rem en la parte superior e inferior y 1.25rem a los lados. */
