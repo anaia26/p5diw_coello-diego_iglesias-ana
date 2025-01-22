@@ -520,3 +520,8 @@
         cursor: pointer;
     }
 
+    /*Definimos los estilos de la etiqueta <strong> con un color rgb(122, 178, 211) y un text-decoration: underline.*/
+    strong {
+        color: rgb(122, 178, 211);
+        text-decoration: underline;
+    }
